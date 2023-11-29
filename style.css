@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  max-width: 1186px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 53px 20px;
+  flex-wrap: wrap;
+}
+
+.header_logo {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.header_nav {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.header_nav a {
+  font-size: 14.4px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.header_contact-phone {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header_contact-phone .contact-phone {
+  font-size: 14.4px;
+  font-weight: 900;
+}
+
+.welcome {
+  background-image: url("./images/welcome_bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.welcome-container {
+  padding-top: 126px;
+  padding-bottom: 115px;
+  /* height: 378px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.welcome-container .title {
+  font-size: 54px;
+  font-weight: 500;
+  margin-bottom: 22px;
+  color: white;
+}
+
+.welcome-container .subtitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+}
+
+.technologies-container {
+  padding-top: 72px;
+  padding-bottom: 58px;
+}
+
+.technologies-container .remember-text {
+  font-size: 12.6px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #a22f32;
+  margin-bottom: 12px;
+}
+
+.technologies-container .description {
+  font-size: 27px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.cards-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cards-flex .card {
+  width: 31%;
+  border: 1px solid #f61067;
+  padding: 39px 36px 64px;
+  min-width: 362px;
+}
+
+.cards-flex .card .card-image {
+  margin-bottom: 33px;
+}
+
+.cards-flex .card .card-title {
+  margin-bottom: 13px;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.cards-flex .card .card-description {
+  font-size: 16.2px;
+  font-weight: 400;
+}
+
+
+.label {
+  text-align: start;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+.label_icon {
+  margin-left: auto;
+  width: 100%;
+  text-align: end;
+}
+
+
+
+footer {
+  color: white;
+  background: linear-gradient(180deg, #00040a 0%, #000206 100%);
+  height: 148px;
+  padding: 112px 66px;
+  padding-right: 87px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.footer_text {
+  text-align: center;
+  width: 100%;
+  color: #FCFCFC;
+  text-align: right;
+}
+
+.menu4Tablet {
+  display: none;
+}
+
+@media (min-width: 400px) and (max-width: 576px) {
+  .welcome-container {
+    text-align: center;
+  }
+
+  .footer_text {
+    font-size: 10.2px;
+  }
+
+  footer {
+    padding: 50px 27px;
+    padding-right: 14px;
+  }
+
+  .header_contact-phone {
+    display: none;
+  }
+
+  .cards-flex {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .welcome-container {
+    text-align: center;
+  }
+
+  .footer_text {
+    font-size: 10.2px;
+  }
+
+  footer {
+    padding: 50px 27px;
+    padding-right: 14px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 992px) {
+
+  .header_nav {
+    display: none;
+  }
+
+  .menu4Tablet {
+    display: block;
+  }
+
+  ul {
+    background: #fff;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    color: #000000;
+    background: #fff;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+
+  li:hover,
+  li:focus-within {
+    background: #00040a;
+    cursor: pointer;
+  }
+
+  li:focus-within a {
+    outline: none;
+  }
+
+  ul li ul {
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+
+  ul li:hover>ul,
+  ul li:focus-within>ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+}
