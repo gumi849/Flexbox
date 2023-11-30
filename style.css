@@ -154,8 +154,15 @@ footer {
   padding-right: 87px;
   display: inline-flex;
   width: 100%;
+  
 }
-
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1186px;
+    gap: 330px;
+    margin: 0 auto;
+}
 .footer_text {
   text-align: center;
   width: 100%;
@@ -267,5 +274,8 @@ footer {
   ul li ul li {
     clear: both;
     width: 100%;
+  }
+  .footer-flex{
+    display: none;
   }
 }
