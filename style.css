@@ -129,13 +129,10 @@ a {
   font-size: 16.2px;
   font-weight: 400;
 }
-
-
 .label {
   text-align: start;
   margin-right: auto;
   width: 100%;
-
 }
 
 .label_icon {
@@ -143,9 +140,6 @@ a {
   width: 100%;
   text-align: end;
 }
-
-
-
 footer {
   color: white;
   background: linear-gradient(180deg, #00040a 0%, #000206 100%);
@@ -154,14 +148,11 @@ footer {
   padding-right: 87px;
   display: inline-flex;
   width: 100%;
-  
 }
 .footer-flex {
   display: flex;
   justify-content: space-between;
-  max-width: 1186px;
-    gap: 330px;
-    margin: 0 auto;
+  gap: 330px;
 }
 .footer_text {
   text-align: center;
